@@ -1,0 +1,40 @@
+
+- To start
+
+  cd $HOME
+  mkdir -p PLAY/t-opticalflow
+  cd PLAY/t-opticalflow
+  git clone /project/at073-elderfall/play/t-opticalflow/C++
+
+- To build
+
+  make
+
+- To run
+
+  ./run.sh
+
+  Sample output in output.txt
+
+- t-opticalflow.cpp
+
+  Examples demonstrating usage.
+
+  Provides uniform access to DualTVL1, Brox, Farneback, PyrLK
+
+  In a way, we also implemented named arguments to provide a
+  smoother transition to Python.
+
+- opticalflow.h
+
+  The interface is implemented in CALLs.
+
+  Ver 1: takes prev & next images.
+  Ver 2: takes a vector of images (see usage in t-opticalflow.cpp)
+
+- Python interface inside PYBIND.
+
+  The usage will mirror that in the C++ example (t-opticalflow.cpp)
+
+  Copy _opticalflow.so to ../Python/Outil/
+

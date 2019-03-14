@@ -1,0 +1,45 @@
+Received files ...
+ ... IMG/337.png
+ ... IMG/336.png
+ ... IMG/337.png
+Loaded 3 image(s).
+----------------------------------------------------------------
+ 4 :            alias :                              CUDA_DualTVL1_dense (std::__cxx11::basic_string<char>)
+ 3 :   implementation :                   cv::cuda::OpticalFlowDual_TVL1 (std::__cxx11::basic_string<char>)
+ 2 :          feature :                                            dense (std::__cxx11::basic_string<char>)
+ 1 :        algorithm :                                         DualTVL1 (std::__cxx11::basic_string<char>)
+ 0 :           device :                                             CUDA (std::__cxx11::basic_string<char>)
+----------------------------------------------------------------
+ 9 :   useInitialFlow :                                                0 (bool)
+ 8 :            gamma :                                                0 (double)
+ 7 :        scaleStep :                                              0.8 (double)
+ 6 :       iterations :                                             1000 (int)
+ 5 :          epsilon :                                             0.01 (double)
+ 4 :            warps :                                                7 (int)
+ 3 :          nscales :                                                5 (int)
+ 2 :            theta :                                              0.3 (double)
+ 1 :           lambda :                                             0.15 (double)
+ 0 :              tau :                                             0.25 (double)
+[640 x 360] : 32FC2 : 8 : 1
+Timing (CUDA) : 0.196114 // calc(image,image) -> flow[x,y]
+Timing (CUDA) : 0.389662 // calc(vetor of image) -> vector of flow[x,y]
+----------------------------------------------------------------
+ 4 :            alias :                               CPU_DualTVL1_dense (std::__cxx11::basic_string<char>)
+ 3 :   implementation :                          cv::DualTVL1OpticalFlow (std::__cxx11::basic_string<char>)
+ 2 :          feature :                                            dense (std::__cxx11::basic_string<char>)
+ 1 :        algorithm :                                         DualTVL1 (std::__cxx11::basic_string<char>)
+ 0 :           device :                                              CPU (std::__cxx11::basic_string<char>)
+----------------------------------------------------------------
+11 :   useInitialFlow :                                                0 (bool)
+10 :  medianFiltering :                                                5 (int)
+ 9 :            gamma :                                                0 (double)
+ 8 :        scaleStep :                                              0.8 (double)
+ 7 :  outerIterations :                                               10 (int)
+ 6 : innnerIterations :                                               30 (int)
+ 5 :          epsilon :                                             0.01 (double)
+ 4 :            warps :                                                7 (int)
+ 3 :          nscales :                                                5 (int)
+ 2 :            theta :                                              0.3 (double)
+ 1 :           lambda :                                             0.15 (double)
+ 0 :              tau :                                             0.25 (double)
+Timing (CPU)  : 27.781
