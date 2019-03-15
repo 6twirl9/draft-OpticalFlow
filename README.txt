@@ -7,7 +7,7 @@
 
 - C++/Python fluent style to select OpenCV optical flow algorithm/implementation.
 
-  . variadic template 
+  . C++11 variadic template 
   . BOOST preprocessor macros
   . pybind11
 
